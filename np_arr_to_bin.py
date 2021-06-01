@@ -13,5 +13,5 @@ points.tofile('points.bin')
 # load lidar binary file
 lidar_file = 'points.bin'
 load_points = np.fromfile(lidar_file, dtype=np.float32).reshape(-1, 4)
-print(points)
-print(points.shape)
+print(load_points)
+print(load_points.shape)
